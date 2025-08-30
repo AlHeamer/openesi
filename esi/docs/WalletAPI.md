@@ -37,9 +37,9 @@ import (
 func main() {
 	characterId := int64(789) // int64 | The ID of the character
 	xCompatibilityDate := time.Now() // string | The compatibility date for the request.
-	acceptLanguage := "en" // string | The language to use for the response. Defaults to 'en'. (optional)
+	acceptLanguage := "acceptLanguage_example" // string | The language to use for the response. (optional) (default to "en")
 	ifNoneMatch := "ifNoneMatch_example" // string | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
-	xTenant := "tranquility" // string | The tenant ID for the request. Defaults to 'tranquility'. (optional)
+	xTenant := "xTenant_example" // string | The tenant ID for the request. (optional) (default to "tranquility")
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -70,9 +70,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
  **xCompatibilityDate** | **string** | The compatibility date for the request. | 
- **acceptLanguage** | **string** | The language to use for the response. Defaults to &#39;en&#39;. | 
+ **acceptLanguage** | **string** | The language to use for the response. | [default to &quot;en&quot;]
  **ifNoneMatch** | **string** | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | 
- **xTenant** | **string** | The tenant ID for the request. Defaults to &#39;tranquility&#39;. | 
+ **xTenant** | **string** | The tenant ID for the request. | [default to &quot;tranquility&quot;]
 
 ### Return type
 
@@ -117,9 +117,9 @@ func main() {
 	characterId := int64(789) // int64 | The ID of the character
 	xCompatibilityDate := time.Now() // string | The compatibility date for the request.
 	page := int32(56) // int32 |  (optional)
-	acceptLanguage := "en" // string | The language to use for the response. Defaults to 'en'. (optional)
+	acceptLanguage := "acceptLanguage_example" // string | The language to use for the response. (optional) (default to "en")
 	ifNoneMatch := "ifNoneMatch_example" // string | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
-	xTenant := "tranquility" // string | The tenant ID for the request. Defaults to 'tranquility'. (optional)
+	xTenant := "xTenant_example" // string | The tenant ID for the request. (optional) (default to "tranquility")
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -151,9 +151,9 @@ Name | Type | Description  | Notes
 
  **xCompatibilityDate** | **string** | The compatibility date for the request. | 
  **page** | **int32** |  | 
- **acceptLanguage** | **string** | The language to use for the response. Defaults to &#39;en&#39;. | 
+ **acceptLanguage** | **string** | The language to use for the response. | [default to &quot;en&quot;]
  **ifNoneMatch** | **string** | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | 
- **xTenant** | **string** | The tenant ID for the request. Defaults to &#39;tranquility&#39;. | 
+ **xTenant** | **string** | The tenant ID for the request. | [default to &quot;tranquility&quot;]
 
 ### Return type
 
@@ -198,9 +198,9 @@ func main() {
 	characterId := int64(789) // int64 | The ID of the character
 	xCompatibilityDate := time.Now() // string | The compatibility date for the request.
 	fromId := int64(789) // int64 |  (optional)
-	acceptLanguage := "en" // string | The language to use for the response. Defaults to 'en'. (optional)
+	acceptLanguage := "acceptLanguage_example" // string | The language to use for the response. (optional) (default to "en")
 	ifNoneMatch := "ifNoneMatch_example" // string | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
-	xTenant := "tranquility" // string | The tenant ID for the request. Defaults to 'tranquility'. (optional)
+	xTenant := "xTenant_example" // string | The tenant ID for the request. (optional) (default to "tranquility")
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -232,9 +232,9 @@ Name | Type | Description  | Notes
 
  **xCompatibilityDate** | **string** | The compatibility date for the request. | 
  **fromId** | **int64** |  | 
- **acceptLanguage** | **string** | The language to use for the response. Defaults to &#39;en&#39;. | 
+ **acceptLanguage** | **string** | The language to use for the response. | [default to &quot;en&quot;]
  **ifNoneMatch** | **string** | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | 
- **xTenant** | **string** | The tenant ID for the request. Defaults to &#39;tranquility&#39;. | 
+ **xTenant** | **string** | The tenant ID for the request. | [default to &quot;tranquility&quot;]
 
 ### Return type
 
@@ -278,9 +278,9 @@ import (
 func main() {
 	corporationId := int64(789) // int64 | The ID of the corporation
 	xCompatibilityDate := time.Now() // string | The compatibility date for the request.
-	acceptLanguage := "en" // string | The language to use for the response. Defaults to 'en'. (optional)
+	acceptLanguage := "acceptLanguage_example" // string | The language to use for the response. (optional) (default to "en")
 	ifNoneMatch := "ifNoneMatch_example" // string | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
-	xTenant := "tranquility" // string | The tenant ID for the request. Defaults to 'tranquility'. (optional)
+	xTenant := "xTenant_example" // string | The tenant ID for the request. (optional) (default to "tranquility")
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -311,9 +311,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
  **xCompatibilityDate** | **string** | The compatibility date for the request. | 
- **acceptLanguage** | **string** | The language to use for the response. Defaults to &#39;en&#39;. | 
+ **acceptLanguage** | **string** | The language to use for the response. | [default to &quot;en&quot;]
  **ifNoneMatch** | **string** | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | 
- **xTenant** | **string** | The tenant ID for the request. Defaults to &#39;tranquility&#39;. | 
+ **xTenant** | **string** | The tenant ID for the request. | [default to &quot;tranquility&quot;]
 
 ### Return type
 
@@ -359,9 +359,9 @@ func main() {
 	division := int64(789) // int64 | 
 	xCompatibilityDate := time.Now() // string | The compatibility date for the request.
 	page := int32(56) // int32 |  (optional)
-	acceptLanguage := "en" // string | The language to use for the response. Defaults to 'en'. (optional)
+	acceptLanguage := "acceptLanguage_example" // string | The language to use for the response. (optional) (default to "en")
 	ifNoneMatch := "ifNoneMatch_example" // string | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
-	xTenant := "tranquility" // string | The tenant ID for the request. Defaults to 'tranquility'. (optional)
+	xTenant := "xTenant_example" // string | The tenant ID for the request. (optional) (default to "tranquility")
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -395,9 +395,9 @@ Name | Type | Description  | Notes
 
  **xCompatibilityDate** | **string** | The compatibility date for the request. | 
  **page** | **int32** |  | 
- **acceptLanguage** | **string** | The language to use for the response. Defaults to &#39;en&#39;. | 
+ **acceptLanguage** | **string** | The language to use for the response. | [default to &quot;en&quot;]
  **ifNoneMatch** | **string** | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | 
- **xTenant** | **string** | The tenant ID for the request. Defaults to &#39;tranquility&#39;. | 
+ **xTenant** | **string** | The tenant ID for the request. | [default to &quot;tranquility&quot;]
 
 ### Return type
 
@@ -443,9 +443,9 @@ func main() {
 	division := int64(789) // int64 | 
 	xCompatibilityDate := time.Now() // string | The compatibility date for the request.
 	fromId := int64(789) // int64 |  (optional)
-	acceptLanguage := "en" // string | The language to use for the response. Defaults to 'en'. (optional)
+	acceptLanguage := "acceptLanguage_example" // string | The language to use for the response. (optional) (default to "en")
 	ifNoneMatch := "ifNoneMatch_example" // string | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
-	xTenant := "tranquility" // string | The tenant ID for the request. Defaults to 'tranquility'. (optional)
+	xTenant := "xTenant_example" // string | The tenant ID for the request. (optional) (default to "tranquility")
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -479,9 +479,9 @@ Name | Type | Description  | Notes
 
  **xCompatibilityDate** | **string** | The compatibility date for the request. | 
  **fromId** | **int64** |  | 
- **acceptLanguage** | **string** | The language to use for the response. Defaults to &#39;en&#39;. | 
+ **acceptLanguage** | **string** | The language to use for the response. | [default to &quot;en&quot;]
  **ifNoneMatch** | **string** | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | 
- **xTenant** | **string** | The tenant ID for the request. Defaults to &#39;tranquility&#39;. | 
+ **xTenant** | **string** | The tenant ID for the request. | [default to &quot;tranquility&quot;]
 
 ### Return type
 

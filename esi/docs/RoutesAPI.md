@@ -36,9 +36,9 @@ func main() {
 	avoid := []int64{int64(123)} // []int64 |  (optional)
 	connections := [][]int64{[]int64{int64(123)}} // [][]int64 |  (optional)
 	flag := "flag_example" // string |  (optional) (default to "shortest")
-	acceptLanguage := "en" // string | The language to use for the response. Defaults to 'en'. (optional)
+	acceptLanguage := "acceptLanguage_example" // string | The language to use for the response. (optional) (default to "en")
 	ifNoneMatch := "ifNoneMatch_example" // string | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
-	xTenant := "tranquility" // string | The tenant ID for the request. Defaults to 'tranquility'. (optional)
+	xTenant := "xTenant_example" // string | The tenant ID for the request. (optional) (default to "tranquility")
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -74,9 +74,9 @@ Name | Type | Description  | Notes
  **avoid** | **[]int64** |  | 
  **connections** | **[][]int64** |  | 
  **flag** | **string** |  | [default to &quot;shortest&quot;]
- **acceptLanguage** | **string** | The language to use for the response. Defaults to &#39;en&#39;. | 
+ **acceptLanguage** | **string** | The language to use for the response. | [default to &quot;en&quot;]
  **ifNoneMatch** | **string** | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | 
- **xTenant** | **string** | The tenant ID for the request. Defaults to &#39;tranquility&#39;. | 
+ **xTenant** | **string** | The tenant ID for the request. | [default to &quot;tranquility&quot;]
 
 ### Return type
 
