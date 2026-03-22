@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing CharacterAPIService
 
@@ -26,7 +26,7 @@ func Test_esi_CharacterAPIService(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		var characterId int64
+		var characterId openapiclient.int64
 
 		resp, httpRes, err := apiClient.CharacterAPI.GetCharactersCharacterId(context.Background(), characterId).Execute()
 

@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing CorporationAPIService
 
@@ -26,7 +26,7 @@ func Test_esi_CorporationAPIService(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		var corporationId int64
+		var corporationId openapiclient.int64
 
 		resp, httpRes, err := apiClient.CorporationAPI.GetCorporationsCorporationId(context.Background(), corporationId).Execute()
 

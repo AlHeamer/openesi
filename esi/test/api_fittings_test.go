@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing FittingsAPIService
 
@@ -29,10 +29,9 @@ func Test_esi_FittingsAPIService(t *testing.T) {
 		var characterId int64
 		var fittingId int64
 
-		resp, httpRes, err := apiClient.FittingsAPI.DeleteCharactersCharacterIdFittingsFittingId(context.Background(), characterId, fittingId).Execute()
+		httpRes, err := apiClient.FittingsAPI.DeleteCharactersCharacterIdFittingsFittingId(context.Background(), characterId, fittingId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})

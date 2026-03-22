@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing AllianceAPIService
 
@@ -38,7 +38,7 @@ func Test_esi_AllianceAPIService(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		var allianceId int64
+		var allianceId openapiclient.int64
 
 		resp, httpRes, err := apiClient.AllianceAPI.GetAlliancesAllianceId(context.Background(), allianceId).Execute()
 

@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing SkillsAPIService
 
@@ -40,7 +40,7 @@ func Test_esi_SkillsAPIService(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		var characterId int64
+		var characterId openapiclient.int64
 
 		resp, httpRes, err := apiClient.SkillsAPI.GetCharactersCharacterIdSkillqueue(context.Background(), characterId).Execute()
 
@@ -54,7 +54,7 @@ func Test_esi_SkillsAPIService(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		var characterId int64
+		var characterId openapiclient.int64
 
 		resp, httpRes, err := apiClient.SkillsAPI.GetCharactersCharacterIdSkills(context.Background(), characterId).Execute()
 

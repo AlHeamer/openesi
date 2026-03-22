@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing CalendarAPIService
 
@@ -73,10 +73,9 @@ func Test_esi_CalendarAPIService(t *testing.T) {
 		var characterId int64
 		var eventId int64
 
-		resp, httpRes, err := apiClient.CalendarAPI.PutCharactersCharacterIdCalendarEventId(context.Background(), characterId, eventId).Execute()
+		httpRes, err := apiClient.CalendarAPI.PutCharactersCharacterIdCalendarEventId(context.Background(), characterId, eventId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})

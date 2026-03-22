@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing UserInterfaceAPIService
 
@@ -26,10 +26,9 @@ func Test_esi_UserInterfaceAPIService(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		resp, httpRes, err := apiClient.UserInterfaceAPI.PostUiAutopilotWaypoint(context.Background()).Execute()
+		httpRes, err := apiClient.UserInterfaceAPI.PostUiAutopilotWaypoint(context.Background()).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -38,10 +37,9 @@ func Test_esi_UserInterfaceAPIService(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		resp, httpRes, err := apiClient.UserInterfaceAPI.PostUiOpenwindowContract(context.Background()).Execute()
+		httpRes, err := apiClient.UserInterfaceAPI.PostUiOpenwindowContract(context.Background()).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -50,10 +48,9 @@ func Test_esi_UserInterfaceAPIService(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		resp, httpRes, err := apiClient.UserInterfaceAPI.PostUiOpenwindowInformation(context.Background()).Execute()
+		httpRes, err := apiClient.UserInterfaceAPI.PostUiOpenwindowInformation(context.Background()).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -62,10 +59,9 @@ func Test_esi_UserInterfaceAPIService(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		resp, httpRes, err := apiClient.UserInterfaceAPI.PostUiOpenwindowMarketdetails(context.Background()).Execute()
+		httpRes, err := apiClient.UserInterfaceAPI.PostUiOpenwindowMarketdetails(context.Background()).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -74,10 +70,9 @@ func Test_esi_UserInterfaceAPIService(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		resp, httpRes, err := apiClient.UserInterfaceAPI.PostUiOpenwindowNewmail(context.Background()).Execute()
+		httpRes, err := apiClient.UserInterfaceAPI.PostUiOpenwindowNewmail(context.Background()).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})

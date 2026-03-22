@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing MailAPIService
 
@@ -29,10 +29,9 @@ func Test_esi_MailAPIService(t *testing.T) {
 		var characterId int64
 		var labelId int64
 
-		resp, httpRes, err := apiClient.MailAPI.DeleteCharactersCharacterIdMailLabelsLabelId(context.Background(), characterId, labelId).Execute()
+		httpRes, err := apiClient.MailAPI.DeleteCharactersCharacterIdMailLabelsLabelId(context.Background(), characterId, labelId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -44,10 +43,9 @@ func Test_esi_MailAPIService(t *testing.T) {
 		var characterId int64
 		var mailId int64
 
-		resp, httpRes, err := apiClient.MailAPI.DeleteCharactersCharacterIdMailMailId(context.Background(), characterId, mailId).Execute()
+		httpRes, err := apiClient.MailAPI.DeleteCharactersCharacterIdMailMailId(context.Background(), characterId, mailId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -144,10 +142,9 @@ func Test_esi_MailAPIService(t *testing.T) {
 		var characterId int64
 		var mailId int64
 
-		resp, httpRes, err := apiClient.MailAPI.PutCharactersCharacterIdMailMailId(context.Background(), characterId, mailId).Execute()
+		httpRes, err := apiClient.MailAPI.PutCharactersCharacterIdMailMailId(context.Background(), characterId, mailId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})

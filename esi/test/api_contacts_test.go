@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing ContactsAPIService
 
@@ -28,10 +28,9 @@ func Test_esi_ContactsAPIService(t *testing.T) {
 
 		var characterId int64
 
-		resp, httpRes, err := apiClient.ContactsAPI.DeleteCharactersCharacterIdContacts(context.Background(), characterId).Execute()
+		httpRes, err := apiClient.ContactsAPI.DeleteCharactersCharacterIdContacts(context.Background(), characterId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -140,10 +139,9 @@ func Test_esi_ContactsAPIService(t *testing.T) {
 
 		var characterId int64
 
-		resp, httpRes, err := apiClient.ContactsAPI.PutCharactersCharacterIdContacts(context.Background(), characterId).Execute()
+		httpRes, err := apiClient.ContactsAPI.PutCharactersCharacterIdContacts(context.Background(), characterId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})

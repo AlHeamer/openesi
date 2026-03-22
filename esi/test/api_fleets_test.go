@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing FleetsAPIService
 
@@ -29,10 +29,9 @@ func Test_esi_FleetsAPIService(t *testing.T) {
 		var fleetId int64
 		var memberId int64
 
-		resp, httpRes, err := apiClient.FleetsAPI.DeleteFleetsFleetIdMembersMemberId(context.Background(), fleetId, memberId).Execute()
+		httpRes, err := apiClient.FleetsAPI.DeleteFleetsFleetIdMembersMemberId(context.Background(), fleetId, memberId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -44,10 +43,9 @@ func Test_esi_FleetsAPIService(t *testing.T) {
 		var fleetId int64
 		var squadId int64
 
-		resp, httpRes, err := apiClient.FleetsAPI.DeleteFleetsFleetIdSquadsSquadId(context.Background(), fleetId, squadId).Execute()
+		httpRes, err := apiClient.FleetsAPI.DeleteFleetsFleetIdSquadsSquadId(context.Background(), fleetId, squadId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -59,10 +57,9 @@ func Test_esi_FleetsAPIService(t *testing.T) {
 		var fleetId int64
 		var wingId int64
 
-		resp, httpRes, err := apiClient.FleetsAPI.DeleteFleetsFleetIdWingsWingId(context.Background(), fleetId, wingId).Execute()
+		httpRes, err := apiClient.FleetsAPI.DeleteFleetsFleetIdWingsWingId(context.Background(), fleetId, wingId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -129,10 +126,9 @@ func Test_esi_FleetsAPIService(t *testing.T) {
 
 		var fleetId int64
 
-		resp, httpRes, err := apiClient.FleetsAPI.PostFleetsFleetIdMembers(context.Background(), fleetId).Execute()
+		httpRes, err := apiClient.FleetsAPI.PostFleetsFleetIdMembers(context.Background(), fleetId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -172,10 +168,9 @@ func Test_esi_FleetsAPIService(t *testing.T) {
 
 		var fleetId int64
 
-		resp, httpRes, err := apiClient.FleetsAPI.PutFleetsFleetId(context.Background(), fleetId).Execute()
+		httpRes, err := apiClient.FleetsAPI.PutFleetsFleetId(context.Background(), fleetId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -187,10 +182,9 @@ func Test_esi_FleetsAPIService(t *testing.T) {
 		var fleetId int64
 		var memberId int64
 
-		resp, httpRes, err := apiClient.FleetsAPI.PutFleetsFleetIdMembersMemberId(context.Background(), fleetId, memberId).Execute()
+		httpRes, err := apiClient.FleetsAPI.PutFleetsFleetIdMembersMemberId(context.Background(), fleetId, memberId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -202,10 +196,9 @@ func Test_esi_FleetsAPIService(t *testing.T) {
 		var fleetId int64
 		var squadId int64
 
-		resp, httpRes, err := apiClient.FleetsAPI.PutFleetsFleetIdSquadsSquadId(context.Background(), fleetId, squadId).Execute()
+		httpRes, err := apiClient.FleetsAPI.PutFleetsFleetIdSquadsSquadId(context.Background(), fleetId, squadId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -217,10 +210,9 @@ func Test_esi_FleetsAPIService(t *testing.T) {
 		var fleetId int64
 		var wingId int64
 
-		resp, httpRes, err := apiClient.FleetsAPI.PutFleetsFleetIdWingsWingId(context.Background(), fleetId, wingId).Execute()
+		httpRes, err := apiClient.FleetsAPI.PutFleetsFleetIdWingsWingId(context.Background(), fleetId, wingId).Execute()
 
 		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})

@@ -1,5 +1,5 @@
 /*
-EVE Stellar Information (ESI) - tranquility
+EVE Stable Infrastructure (ESI) - tranquility
 
 Testing RoutesAPIService
 
@@ -22,14 +22,14 @@ func Test_esi_RoutesAPIService(t *testing.T) {
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
 
-	t.Run("Test RoutesAPIService GetRouteOriginDestination", func(t *testing.T) {
+	t.Run("Test RoutesAPIService PostRoute", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		var destination int64
-		var origin int64
+		var originSystemId openapiclient.int64
+		var destinationSystemId openapiclient.int64
 
-		resp, httpRes, err := apiClient.RoutesAPI.GetRouteOriginDestination(context.Background(), destination, origin).Execute()
+		resp, httpRes, err := apiClient.RoutesAPI.PostRoute(context.Background(), originSystemId, destinationSystemId).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
