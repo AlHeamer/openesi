@@ -139,7 +139,7 @@ LOCK TABLES ` + tableName + ` WRITE;
 				dst.WriteString(buf.String()[:buf.Len()-1] + ";\n")
 				buf.Reset()
 			}
-			buf.WriteString("INSERT INTO invTypes VALUES")
+			buf.WriteString("INSERT INTO " + tableName + " VALUES")
 		}
 		i++
 
